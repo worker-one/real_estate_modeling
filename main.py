@@ -114,20 +114,20 @@ import xgboost as xgb
 
 # Path to the saved XGBoost model
 
-# Load the model using pickle
+Load the model using pickle
 with open('./models/xgb_model_1.pkl', 'rb') as model_file:
     xgb_model_1 = pickle.load(model_file)
 
 with open('./models/xgb_model_2.pkl', 'rb') as model_file:
     xgb_model_2 = pickle.load(model_file)
 
-# with open('/content/mlp_model_1.pkl', 'rb') as model_file:
-#     xgb_model_1 = pickle.load(model_file)
+with open('./models/mlp_model_1.pkl', 'rb') as model_file:
+    mlp_model_1 = pickle.load(model_file)
 
 models = {
   "xgb_1" : xgb_model_1,
   "xgb_2" : xgb_model_2,
-  #"mlp_1" : mlp_model_1
+  "mlp_1" : mlp_model_1
 }
 
 from geopy.distance import great_circle
