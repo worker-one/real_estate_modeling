@@ -249,5 +249,5 @@ with gr.Blocks() as interface:
             gr.Markdown("#### ⏳ Пожалуйста, подождите, пока идет расчет оценки...")
 
 # Launch the Gradio interface
-interface.launch(debug=True)
+interface.launch(server_name="0.0.0.0", server_port=8080)
 
