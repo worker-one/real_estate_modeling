@@ -112,9 +112,7 @@ import pickle
 import xgboost as xgb
 
 
-# Path to the saved XGBoost model
 
-Load the model using pickle
 with open('./models/xgb_model_1.pkl', 'rb') as model_file:
     xgb_model_1 = pickle.load(model_file)
 
