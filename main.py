@@ -219,8 +219,8 @@ with gr.Blocks() as interface:
         inputs.append(gr.Dropdown(choices=transport_values, value="пешком", label='До станции', info="Выберите способ передвижения до станции"))
 
     with gr.Accordion("Географические координаты"):
-        inputs.append(gr.Number(label='Широта', info="Широта объекта", value=moscow_center_coords[0))
-        inputs.append(gr.Number(label='Долгота', info="Долгота объекта", value=moscow_center_coords[1)))
+        inputs.append(gr.Number(label='Широта', info="Широта объекта", value=moscow_center_coords[0]))
+        inputs.append(gr.Number(label='Долгота', info="Долгота объекта", value=moscow_center_coords[1]))
 
     # New section for selecting the model
     with gr.Accordion("Выбор модели для предсказания"):
