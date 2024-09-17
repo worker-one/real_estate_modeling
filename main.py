@@ -211,17 +211,17 @@ with gr.Blocks() as interface:
     with gr.Accordion("Детали объекта"):
         inputs.append(gr.Dropdown(choices=category_values, label="Категория объявления", info="Выберите тип недвижимости"))
         inputs.append(gr.Dropdown(choices=condition_values, label="Состояние", info="Выберите состояние объекта"))
-        inputs.append(gr.Slider(label='Общая площадь (м²)', minimum=10, maximum=300, value=30, step=1, info="Общая площадь в квадратных метрах"))
-        inputs.append(gr.Slider(label='Этаж', minimum=1, maximum=50, value=2, step=1, info="Номер этажа квартиры"))
-        inputs.append(gr.Slider(label='Этажность дома', minimum=1, maximum=50, value=5, step=1, info="Общее количество этажей в доме"))
+        inputs.append(gr.Slider(label='Общая площадь (м²)', minimum=10, maximum=800, value=30, step=1, info="Общая площадь в квадратных метрах"))
+        inputs.append(gr.Slider(label='Этаж', minimum=1, maximum=100, value=2, step=1, info="Номер этажа квартиры"))
+        inputs.append(gr.Slider(label='Этажность дома', minimum=1, maximum=100, value=5, step=1, info="Общее количество этажей в доме"))
 
     with gr.Accordion("Транспорт и доступность"):
         inputs.append(gr.Slider(label='Время до станции (минуты)', minimum=1, maximum=60, value=5, step=1, info="Время до ближайшей станции (минуты)"))
         inputs.append(gr.Dropdown(choices=transport_values, value="пешком", label='До станции', info="Выберите способ передвижения до станции"))
 
     with gr.Accordion("Географические координаты"):
-        inputs.append(gr.Number(label='Широта', info="Широта объекта"))
-        inputs.append(gr.Number(label='Долгота', info="Долгота объекта"))
+        inputs.append(gr.Number(label='Широта', info="Широта объекта", value=moscow_center_coords[0))
+        inputs.append(gr.Number(label='Долгота', info="Долгота объекта", value=moscow_center_coords[1)))
 
     # New section for selecting the model
     with gr.Accordion("Выбор модели для предсказания"):
@@ -247,5 +247,5 @@ with gr.Blocks() as interface:
             gr.Markdown("#### ⏳ Пожалуйста, подождите, пока идет расчет оценки...")
 
 # Launch the Gradio interface
-interface.launch(server_name="0.0.0.0", server_port=8080)
+interface.launch(server_name="0.0.0.0", server_port=8080, debug=True)
 
