@@ -8,6 +8,8 @@ CATEGORICAL_COLUMNS = ['состояние', 'округ', 'метро', 'пеш
 NUMERICAL_COLUMNS = ['общая площадь', 'этаж', 'время до станции', 'Этажность дома', 'широта', 'долгота', 'цена за метр объявления']
 COLUMNS = CATEGORICAL_COLUMNS + NUMERICAL_COLUMNS
 
+moscow_center_coords = (55.7558, 37.6173)
+
 nan_fill_values = {
     "общая площадь" : 182.0,
     "этаж" : 1.0,
