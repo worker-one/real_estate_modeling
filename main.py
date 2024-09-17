@@ -136,7 +136,6 @@ def predict_user_input(*user_input_values):
     # Initialize a dictionary with all model features set to 0
 
     user_input_keys = ["Метро", "Округ", "Город", "Категория объявления", "Состояние", "Общая площадь","Этаж", "Этажность дома", "Время до станции", "пешком/транспортом", "Широта", "Долгота"]
-    print(user_input_values)
     user_input = dict(zip(user_input_keys, user_input_values))
     model = models[user_input_values[-1]]
     input_data = {feature: 0 for feature in model.feature_names_in_}
