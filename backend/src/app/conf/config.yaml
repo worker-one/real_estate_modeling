@@ -1,0 +1,457 @@
+api:
+  version: "0.1.0"
+  title: "app"
+  description: "Template for REST API service"
+  host: "0.0.0.0"
+  port: 8000
+service:
+  eligibility:
+    building:
+      - name: Алкомаркеты
+        min_area: 60.0
+        max_area: 400.0
+        floors: 1
+      - name: Алкотека
+        min_area: 80.0
+        max_area: 140.0
+        floors: 1
+      - name: Красное и белое
+        min_area: 80.0
+        max_area: 400.0
+        floors: 1
+      - name: Бристоль
+        min_area: 80.0
+        max_area: 400.0
+        floors: 1
+      - name: Винлаб
+        min_area: 80.0
+        max_area: 300.0
+        floors: 1
+      - name: Норман
+        min_area: 80.0
+        max_area: 400.0
+        floors: 1
+      - name: Ароматный мир
+        min_area: 60.0
+        max_area: 140.0
+        floors: 1
+      - name: Мильстрим
+        min_area: 60.0
+        max_area: 110.0
+        floors: 1
+      - name: Аптеки 
+        min_area: 40.0
+        max_area: 150.0
+        floors: 1
+      - name: Апрель
+        min_area: 50.0
+        max_area: 150.0
+        floors: 1
+      - name: Ригла
+        min_area: 20.0
+        max_area: 100.0
+        floors: 1
+      - name: 36.6
+        min_area: 50.0
+        max_area: 100.0
+        floors: 1
+      - name: Горздрав
+        min_area: 40.0
+        max_area: 150.0
+        floors: 1
+      - name: Юнифарма
+        min_area: 50.0
+        max_area: 150.0
+        floors: 1
+      - name: Максавит
+        min_area: 40.0
+        max_area: 100.0
+        floors: 1
+      - name: Мелодия здоровья
+        min_area: 30.0
+        max_area: 100.0
+        floors: null
+      - name: Планета здоровья
+        min_area: 40.0
+        max_area: 350.0
+        floors: 1
+      - name: Нео-фарм
+        min_area: 50.0
+        max_area: 120.0
+        floors: 1
+      - name: Вита
+        min_area: 40.0
+        max_area: 80.0
+        floors: 1
+      - name: Кофейни
+        min_area: 15.0
+        max_area: 150.0
+        floors: null
+      - name: One and double
+        min_area: 15.0
+        max_area: 50.0
+        floors: 1
+      - name: Stars coffe
+        min_area: null
+        max_area: null
+        floors: 1
+      - name: cofix
+        min_area: 15.0
+        max_area: 150.0
+        floors: null
+      - name: one price coffee
+        min_area: 15.0
+        max_area: 45.0
+        floors: null
+      - name: Пункты выдачи
+        min_area: 20.0
+        max_area: 100.0
+        floors:
+        - 0
+        - 1
+      - name: Яндекс
+        min_area: 20.0
+        max_area: 100.0
+        floors:
+        - 0
+        - 1
+      - name: Ozon
+        min_area: 25.0
+        max_area: 100.0
+        floors:
+        - 0
+        - 1
+      - name: Wildberries
+        min_area: 50.0
+        max_area: 100.0
+        floors:
+        - 0
+        - 1
+      - name: СДЭК
+        min_area: 35.0
+        max_area: 100.0
+        floors:
+        - 0
+        - 1
+      - name: Ситилинк пункт выдачи
+        min_area: 15.0
+        max_area: 40.0
+        floors:
+        - 0
+        - 1
+      - name: Салоны связи
+        min_area: 20.0
+        max_area: 70.0
+        floors: null
+      - name: Мегафон
+        min_area: 20.0
+        max_area: null
+        floors: null
+      - name: Билайн
+        min_area: 20.0
+        max_area: 50.0
+        floors: null
+      - name: Теле2
+        min_area: 15.0
+        max_area: 60.0
+        floors: null
+      - name: МТС
+        min_area: 20.0
+        max_area: 70.0
+        floors: null
+      - name: Супермаркеты
+        min_area: 100.0
+        max_area: 1500.0
+        floors: 1
+      - name: Магнит у дома
+        min_area: 300.0
+        max_area: 1000.0
+        floors:
+        - 0
+        - 1
+      - name: Магнит - косметик
+        min_area: 120.0
+        max_area: 450.0
+        floors:
+        - 0
+        - 1
+        - 2
+      - name: Пятерочка
+        min_area: 250.0
+        max_area: 1000.0
+        floors: null
+      - name: Дикси
+        min_area: 350.0
+        max_area: 700.0
+        floors: 1
+      - name: Лента супермаркет
+        min_area: 600.0
+        max_area: 1500.0
+        floors: null
+      - name: Азбука вкуса
+        min_area: 200.0
+        max_area: 2000.0
+        floors: 1
+      - name: Вкусвилл
+        min_area: 100.0
+        max_area: 250.0
+        floors: 1
+      - name: Верный
+        min_area: 400.0
+        max_area: 1000.0
+        floors: 1
+      - name: Авоська
+        min_area: 600.0
+        max_area: 1500.0
+        floors: null
+      - name: Мираторг супермаркет
+        min_area: 500.0
+        max_area: 3500.0
+        floors: null
+      - name: Мираторг Мясная лавка
+        min_area: 80.0
+        max_area: 150.0
+        floors: null
+      - name: Чижик
+        min_area: 390.0
+        max_area: 420.0
+        floors: 1
+      - name: Fix Price
+        min_area: 230.0
+        max_area: 350.0
+        floors:
+        - 0
+        - 1
+        - 2
+      - name: Spar
+        min_area: 200.0
+        max_area: 1000.0
+        floors: null
+      - name: Светофор 
+        min_area: 1000.0
+        max_area: 2000.0
+        floors: 1
+      - name: Гипермаркеты 
+        min_area: 1000.0
+        max_area: 20000.0
+        floors: null
+      - name: Магнит гипермаркет и семейный 
+        min_area: 1000.0
+        max_area: 10000.0
+        floors: null
+      - name: Перекресток
+        min_area: 1000.0
+        max_area: 5000.0
+        floors: null
+      - name: Ашан
+        min_area: 7000.0
+        max_area: 20000.0
+        floors: null
+      - name: Лента гипермаркет
+        min_area: 5500.0
+        max_area: 20000.0
+        floors: null
+      - name: Светофор гипермаркет
+        min_area: 2500.0
+        max_area: 3500.0
+        floors: null
+      - name: Светофор РЦ
+        min_area: 2000.0
+        max_area: 2500.0
+        floors: null
+      - name: Общепит 
+        min_area: 80.0
+        max_area: 600.0
+        floors: null
+      - name: Бургекинг
+        min_area: 250.0
+        max_area: 500.0
+        floors: null
+      - name: Вкусно и точка
+        min_area: 250.0
+        max_area: 600.0
+        floors: null
+      - name: Ростикс 
+        min_area: 300.0
+        max_area: 500.0
+        floors: null
+      - name: Сабвей
+        min_area: 80.0
+        max_area: 100.0
+        floors: null
+      - name: Ощепит ТЦ
+        min_area: 45.0
+        max_area: 400.0
+        floors: null
+      - name: Бургеркинг в ТЦ
+        min_area: 120.0
+        max_area: 320.0
+        floors: null
+      - name: Вкусно и точка в ТЦ
+        min_area: 120.0
+        max_area: 400.0
+        floors: null
+      - name: Ростикс в ТЦ
+        min_area: 120.0
+        max_area: 140.0
+        floors: null
+      - name: Сабвей в ТЦ
+        min_area: 45.0
+        max_area: 50.0
+        floors: null
+      - name: Дарксторы
+        min_area: 200.0
+        max_area: 1000.0
+        floors:
+        - 0
+        - 1
+        - 2
+      - name: Вкусвилл
+        min_area: 600.0
+        max_area: 1000.0
+        floors:
+        - 0
+        - 1
+        - 2
+      - name: Самокат
+        min_area: 200.0
+        max_area: 1000.0
+        floors:
+        - 0
+        - 1
+        - 2
+      - name: Яндекс лавка
+        min_area: 200.0
+        max_area: 1000.0
+        floors:
+        - 0
+        - 1
+        - 2
+      - name: Магазины электроники 
+        min_area: 250.0
+        max_area: 4500.0
+        floors: null
+      - name: Мвидео 
+        min_area: 350.0
+        max_area: 4500.0
+        floors: null
+      - name: DNS
+        min_area: 350.0
+        max_area: 4500.0
+        floors: null
+      - name: Ситилинк
+        min_area: 350.0
+        max_area: 4500.0
+        floors: null
+      - name: Эльдарадо (100+)
+        min_area: 1000.0
+        max_area: 1700.0
+        floors: null
+      - name: Эльдарадо (30+)
+        min_area: 250.0
+        max_area: 1700.0
+        floors: null
+      - name: Автосервис
+        min_area: 180.0
+        max_area: 1000.0
+        floors: null
+      - name: Fit cervice
+        min_area: 180.0
+        max_area: 1500.0
+        floors: null
+    land:
+      - name: Супермаркеты
+        min_area: 500.0
+        max_area: 15000.0
+        rent: false
+        sell: false
+
+      - name: Магнит у дома
+        min_area: 900.0
+        max_area: 3000.0
+        rent: true
+        sell: true
+
+      - name: "Магнит - косметик"
+        min_area: 480.0
+        max_area: 2000.0
+        rent: true
+        sell: true
+
+      - name: Пятерочка
+        min_area: 750.0
+        max_area: 3000.0
+        rent: false
+        sell: false
+
+      - name: Лента супемаркеты
+        min_area: 4000.0
+        max_area: 15000.0
+        rent: false
+        sell: false
+
+      - name: Авоська
+        min_area: 1000.0
+        max_area: 3000.0
+        rent: false
+        sell: false
+
+      - name: Гипермаркеты
+        min_area: 3000.0
+        max_area: 200000.0
+        rent: true
+        sell: true
+
+      - name: Магнит гипермаркет и семейный
+        min_area: 3000.0
+        max_area: 30000.0
+        rent: true
+        sell: true
+
+      - name: Ашан
+        min_area: 20000.0
+        max_area: 200000.0
+        rent: false
+        sell: false
+
+      - name: Лента гипермаркеты
+        min_area: 15000.0
+        max_area: 60000.0
+        rent: false
+        sell: false
+
+      - name: Распределительные центры
+        min_area: 40000.0
+        max_area: null
+        rent: false
+        sell: false
+
+      - name: Распределительный центр x5
+        min_area: 40000.0
+        max_area: null
+        rent: false
+        sell: false
+
+      - name: Общепит
+        min_area: 1500.0
+        max_area: 5000.0
+        rent: true
+        sell: true
+
+      - name: Бургеркинг
+        min_area: 1800.0
+        max_area: 5000.0
+        rent: false
+        sell: false
+
+      - name: Вкусно и точка
+        min_area: 1500.0
+        max_area: 2500.0
+        rent: false
+        sell: false
+
+      - name: Ростикс
+        min_area: 1800.0
+        max_area: 5000.0
+        rent: false
+        sell: false

@@ -1,0 +1,18 @@
+meta {
+  name: create item
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{base_url}}/items/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "title": "apple",
+    "description": "a food item that can be eaten"
+  }
+}
