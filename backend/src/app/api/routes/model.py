@@ -14,9 +14,9 @@ router = APIRouter()
 
 # Load models
 model_files = {
-    "xgb_1": './models/xgb_model_1.pkl',
-    "xgb_2": './models/xgb_model_2.pkl',
-    "mlp_1": './models/mlp_model_1.pkl'
+    "xgb_1": './backend/models/xgb_model_1.pkl',
+    "xgb_2": './backend/models/xgb_model_2.pkl',
+    "mlp_1": './backend/models/mlp_model_1.pkl'
 }
 
 models = {}

@@ -25,7 +25,7 @@ if not base_url:
 
 # Load configuration with error handling
 try:
-    config = OmegaConf.load("./frontend/src/app/conf/config.yaml")
+    config = OmegaConf.load("./src/app/conf/config.yaml")
 except FileNotFoundError:
     logging.error("Configuration file config.yaml not found.")
     raise

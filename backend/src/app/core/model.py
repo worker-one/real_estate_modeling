@@ -7,13 +7,13 @@ from pydantic import BaseModel
 from xgboost import XGBClassifier
 
 # Load models
-with open('./models/xgb_model_1.pkl', 'rb') as model_file:
+with open('./backend/models/xgb_model_1.pkl', 'rb') as model_file:
     xgb_model_1 = pickle.load(model_file)
 
-with open('./models/xgb_model_2.pkl', 'rb') as model_file:
+with open('./backend/models/xgb_model_2.pkl', 'rb') as model_file:
     xgb_model_2 = pickle.load(model_file)
 
-with open('./models/mlp_model_1.pkl', 'rb') as model_file:
+with open('./backend/models/mlp_model_1.pkl', 'rb') as model_file:
     mlp_model_1 = pickle.load(model_file)
 
 models = {

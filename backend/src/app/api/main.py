@@ -32,7 +32,7 @@ def create_app(config_path: str = "src/app/conf/config.yaml") -> FastAPI:
 
 
 if __name__ == "__main__":
-    config_path = "src/app/conf/config.yaml"
+    config_path = "./backend/src/app/conf/config.yaml"
     config = OmegaConf.load(config_path)
     create_tables()
     app = create_app(config_path)

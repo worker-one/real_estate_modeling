@@ -20,7 +20,7 @@ facility_column_mapping = {
     "Max floor": "max_floor"
 }
 
-facility_eligibility_table = pd.read_excel("./data/facility.xlsx")
+facility_eligibility_table = pd.read_excel("./backend/data/facility.xlsx")
 facility_eligibility_table.columns = [facility_column_mapping[column.strip()] for column in facility_eligibility_table.columns]
 facility_eligibility_table.replace({'да': True}, inplace=True)
 
@@ -35,7 +35,7 @@ land_column_mapping = {
     "Наличие всех коммуникации": "utilities"
 }
 
-land_eligibility_table = pd.read_excel("./data/land.xlsx")
+land_eligibility_table = pd.read_excel("./backend/data/land.xlsx")
 land_eligibility_table.columns = [land_column_mapping[column.strip()] for column in land_eligibility_table.columns]
 land_eligibility_table.replace({'да': True}, inplace=True)
 

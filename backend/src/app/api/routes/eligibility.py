@@ -25,7 +25,7 @@ def load_yaml_to_list(yaml_file_path):
         return items
 
 
-yaml_file_path = './src/app/conf/config.yaml'
+yaml_file_path = './backend/src/app/conf/config.yaml'
 eligibility_criteria = load_yaml_to_list(yaml_file_path)
 
 @router.get("/criteria/facility")

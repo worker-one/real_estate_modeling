@@ -8,7 +8,7 @@ from dotenv import find_dotenv, load_dotenv
 from omegaconf import OmegaConf
 
 # Load configuration from config.yaml
-config = OmegaConf.load("./frontend/src/app/conf/config.yaml")
+config = OmegaConf.load("./src/app/conf/config.yaml")
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO)

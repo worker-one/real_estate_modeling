@@ -3,7 +3,7 @@ import math
 import pandas as pd
 
 
-data = pd.read_csv("./data/prices.csv")
+data = pd.read_csv("./backend/data/prices.csv")
 
 # Haversine formula to calculate the distance between two points on Earth
 def haversine(lat1, lon1, lat2, lon2):
